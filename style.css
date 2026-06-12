@@ -1,0 +1,269 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:"Roboto",sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+header{
+    background:#2c3e50;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+#greeting{
+    margin-bottom:15px;
+    font-size:18px;
+}
+#darkModeBtn{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-bottom:20px;
+    font-size:15px;
+    transition:.3s;
+}
+#darkModeBtn:hover{
+    background:#2980b9;
+}
+nav{
+    margin-top:15px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:17px;
+    transition:.3s;
+}
+nav a:hover{
+    color:#3498db;
+}
+section{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+#about img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display:block;
+    margin:20px auto;
+    object-fit:cover;
+    border:4px solid #3498db;
+}
+#about p{
+    text-align:center;
+    font-size:17px;
+}
+#toggleSkills{
+    display:block;
+    margin:0 auto 20px;
+    padding:10px 25px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+#toggleSkills:hover{
+    background:#2980b9;
+}
+
+#skills ul{
+    list-style:square;
+    margin-left:30px;
+}
+#skills li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+#hobbies ul{
+    list-style:circle;
+    margin-left:30px;
+}
+#hobbies li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+#gallery{
+    text-align:center;
+}
+#sliderImage{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+    border:4px solid #3498db;
+    margin:20px auto;
+    display:block;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+.gallery-buttons{
+    margin-top:20px;
+}
+.gallery-buttons button{
+    padding:10px 20px;
+    margin:0 10px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+.gallery-buttons button:hover{
+    background:#2980b9;
+}
+#contact h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+#contactForm{
+    max-width:600px;
+    margin:0 auto;
+}
+#contactForm label{
+    display:block;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+#contactForm input,
+#contactForm textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    transition:.3s;
+}
+#contactForm input:focus,
+#contactForm textarea:focus{
+    border-color:#3498db;
+    outline:none;
+    box-shadow:0 0 6px rgba(52,152,219,.4);
+}
+#contactForm button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+#contactForm button:hover{
+    background:#2980b9;
+}
+#formMessage{
+    text-align:center;
+    margin-top:15px;
+    font-weight:bold;
+}
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+footer h3{
+    margin-bottom:10px;
+}
+footer a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+}
+footer a:hover{
+    color:#3498db;
+}
+footer p{
+    margin-top:15px;
+}
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+.dark-mode header,
+.dark-mode footer{
+    background:#000;
+}
+.dark-mode section{
+    background:#1f1f1f;
+    color:white;
+}
+.dark-mode section h2{
+    color:white;
+}
+.dark-mode nav a{
+    color:white;
+}
+.dark-mode nav a:hover{
+    color:#3498db;
+}
+.dark-mode #contactForm input,
+.dark-mode #contactForm textarea{
+    background:#2d2d2d;
+    color:white;
+    border:1px solid #555;
+}
+.dark-mode #contactForm input::placeholder,
+.dark-mode #contactForm textarea::placeholder{
+    color:#ccc;
+}
+@media (max-width:768px){
+
+    header h1{
+        font-size:28px;
+    }
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+    section{
+        width:95%;
+        padding:20px;
+    }
+    #about img,
+    #sliderImage{
+        width:180px;
+        height:180px;
+    }
+    .gallery-buttons button{
+        display:block;
+        width:100%;
+        margin:10px 0;
+    }
+    #contactForm button{
+        width:100%;
+    }
+}
